@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "electron ."
+    "start": "DEBUG=1 electron .",
+    "develop": "npm run build; npm start"
   },
   "author": "Yuichi Yogo",
   "license": "ISC",
