@@ -1,0 +1,15 @@
+{
+  "name": "electron-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "author": "Yuichi Yogo",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "electron": "^3.0.2"
+  }
+}

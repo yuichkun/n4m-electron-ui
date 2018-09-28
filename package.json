@@ -1,0 +1,13 @@
+{
+  "name": "n4m-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./electron",
+  "scripts": {},
+  "author": "Yuichi Yogo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.1",
+    "socket.io": "^2.1.1"
+  }
+}
