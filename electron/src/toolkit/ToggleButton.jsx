@@ -6,11 +6,18 @@ export default class ChannelsSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 1
+      value: 0
     }
   }
   get isOn() {
     return this.state.value === 1;
+  }
+  componentDidMount() {
+    window.addEventListener('keydown', (event) => {
+      if (event.key === ' ') {
+        this.handleChange();
+      }
+    });
   }
   render() {
     return (
