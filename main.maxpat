@@ -39,19 +39,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 764.0, 128.0, 33.0 ],
-					"presentation_linecount" : 2,
-					"text" : "... like that's what she says"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 3,
 					"fontname" : "Arial",
@@ -60,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 726.85711669921875, 183.0, 25.0 ],
+					"patching_rect" : [ 603.0, 736.85711669921875, 183.0, 25.0 ],
 					"text" : "0. Turn me on!!!!"
 				}
 
@@ -75,8 +62,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 256.0, 52.0, 187.0, 54.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 256.0, 52.0, 189.0, 54.0 ],
 					"text" : "3. HIT ME so I can take you to the AWESOME Electron World!!!!"
 				}
 
@@ -93,8 +79,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 644.0, 201.0, 187.0, 98.0 ],
-					"presentation_linecount" : 6,
-					"text" : "2. When this says \"completed\"\nYou are good to go!!\n\nIt will take about 40 - 60 seconds"
+					"text" : "2. When this says \"completed\"\nYou are good to go!!\n\nIt will take a long time depending on your network."
 				}
 
 			}
@@ -122,7 +107,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 770.0, 28.0, 187.0, 54.0 ],
-					"text" : "1. HIT THIS SHIT IF YOU HAVEN'T ALREADY INSTALLED ELECTRON"
+					"text" : "1. HIT THIS BUTTON IF YOU HAVEN'T ALREADY INSTALLED ELECTRON"
 				}
 
 			}
@@ -1189,13 +1174,13 @@
 					"patching_rect" : [ 796.0, 570.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~"
+							"parameter_longname" : "mc.live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
