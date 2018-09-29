@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "./electron",
-  "scripts": {},
+  "scripts": {
+    "child-install": "cd ./electron; npm install",
+    "child-build": "cd ./electron; npm run build",
+    "setup": "npm install; npm run child-install; npm run child-build"
+  },
   "author": "Yuichi Yogo",
   "license": "ISC",
   "devDependencies": {
