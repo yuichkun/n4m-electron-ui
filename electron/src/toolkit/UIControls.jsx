@@ -3,9 +3,6 @@ import ToggleButton from './ToggleButton.jsx';
 import SampleSourceSelector from './SampleSourceSelector.jsx';
 import SliderSet from './SliderSet.jsx';
 
-
-
-
 export default () => (
   <div>
     <h2>On/Off</h2>
@@ -21,7 +18,7 @@ export default () => (
         {
           name: 'from',
           min: 0,
-          max: 1.0
+          max: 10 
         },
         {
           name: 'to',

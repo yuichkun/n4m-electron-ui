@@ -1,21 +1,7 @@
 import { Component } from 'react';
 import io from '../utils/io';
 import Slider from '@material-ui/lab/Slider';
-
-
-// {
-//   sliders: [
-//     {
-//       name: string,
-//       min: number,
-//       max: number,
-//     }
-//   ],
-//    defaults: {
-//     hoge: asdf,
-//         bar:adlfkj
-//     }
-// }
+import Label from './Label.jsx';
 
 export default class SliderSet extends Component {
   constructor(props) {
@@ -25,9 +11,19 @@ export default class SliderSet extends Component {
   render() {
     return (
       <div>
+        {this.renderParameters()}
         {this.renderSliders()}
       </div>
     );
+  }
+
+  renderParameters() {
+    const params = [];
+    for (const key in this.state) {
+      const value = this.state[key];
+      params.push(<Label label={key} value={value} />);
+    }
+    return params;
   }
 
   renderSliders() {
