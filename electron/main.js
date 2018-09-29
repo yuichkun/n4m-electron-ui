@@ -5,15 +5,15 @@
 
 const { app, BrowserWindow } = require('electron');
 
-app.on('ready', function() {
+app.on('ready', () => {
 
   console.log('Electron has started');
 
   // Launch a window and load index.html
-  let window = new BrowserWindow({width: 800, height: 600});
+  let window = new BrowserWindow({width: 450, height: 800});
   window.loadFile('./index.html');
 
-  window.on('closed', function() {
+  window.on('closed', () => {
     window = null;
   });
 
