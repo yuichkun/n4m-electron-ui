@@ -44,8 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 835.90478515625, 170.0, 146.0, 22.0 ],
-					"text" : "completed"
+					"patching_rect" : [ 835.90478515625, 170.0, 146.0, 22.0 ]
 				}
 
 			}
@@ -1101,13 +1100,13 @@
 					"patching_rect" : [ 787.0, 539.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "mc.live.gain~"
 						}
 
 					}
