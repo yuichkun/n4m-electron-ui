@@ -3,7 +3,7 @@ import io from '../utils/io';
 import Slider from '@material-ui/lab/Slider';
 import Label from './Label.jsx';
 
-export default class ChannelsSlider extends Component {
+export default class SimpleSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,13 +14,13 @@ export default class ChannelsSlider extends Component {
     return (
       <div>
         <Label label='channels' value={this.state.value} />
-        <Slider min={1} max={100} value={this.state.value} onChange={this.handleChange.bind(this)} />
+        <Slider min={this.props.min} max={this.props.max} value={this.state.value} onChange={this.handleChange.bind(this)} />
       </div>
     );
   }
   handleChange(e, _value) {
-    const value = parseInt(_value);
+    const value = this.props.shouldParseInt === true ? parseInt(_value) : _value;
     this.setState({value})
-    io.emit('dispatch', { channels: value });
+    io.emit('dispatch', { [this.props.name]: value });
   }
 }

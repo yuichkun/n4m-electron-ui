@@ -1,4 +1,4 @@
-import ChannelsSlider from './ChannelsSlider.jsx';
+import SimpleSlider from './SimpleSlider.jsx';
 import ToggleButton from './ToggleButton.jsx';
 import SampleSourceSelector from './SampleSourceSelector.jsx';
 import SliderSet from './SliderSet.jsx';
@@ -8,7 +8,9 @@ export default () => (
     <h2>On/Off</h2>
     <ToggleButton />
     <h2>Channels</h2>
-    <ChannelsSlider />
+    <SimpleSlider name='channels' min={1} max={80} shouldParseInt />
+    <h2>Panner</h2>
+    <SimpleSlider name='panner' min={0.01} max={3} />
     <h2>Sample Source</h2>
     <SampleSourceSelector />
     <h2>Spread Inclusive</h2>
